@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
 
 
 app.post('/thankyou', (req, res) => {
-  
-  res.render('confirm', { order });
+  console.log(req.body)
+  res.render('confirm');
 });
 
 

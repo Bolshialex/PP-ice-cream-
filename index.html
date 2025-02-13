@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Order Form</title>
+    <link rel="icon" href="img/icecreamicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <h1>Ice Cream Order Form</h1>
+      </header>
+      <div>
+        <form>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="info-container">
+              <label class="label-style">Name:</label>
+              <input type="text" class="field-input" />
+            </div>
+            <div class="info-container">
+              <label class="label-style">Email:</label>
+              <input type="text" class="field-input" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Order Details</legend>
+
+            <div class="info-container">
+              <label class="label-style">Choose your flavor:</label>
+              <select class="field-input" name="Flavors" id="">
+                <option value="Vanilla">Vanilla</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="strawberry">Strawberry</option>
+              </select>
+            </div>
+
+            <div class="info-container-buttons">
+              <div>
+                <label class="label-style"> Choose your cone: </label>
+              </div>
+              <div>
+                <label><input type="radio" name="cone" />Waffle cone</label>
+                <label><input type="radio" name="cone" />Sugar cone</label>
+                <label><input type="radio" name="cone" />Cup</label>
+              </div>
+            </div>
+
+            <div class="info-container-buttons">
+              <div>
+                <label class="label-style">Toppings: </label>
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" name="Sprinkles" id="" />
+                  Sprinkles
+                </label>
+                <label>
+                  <input type="checkbox" name="Nuts" id="" />
+                  Nuts
+                </label>
+                <label>
+                  <input type="checkbox" name="Cherry" id="" />
+                  Cherry
+                </label>
+                <label>
+                  <input type="checkbox" name="Whipped Cream" id="" />
+                  Whipped Cream
+                </label>
+              </div>
+            </div>
+            <div class="info-container">
+              <label class="label-style">Additional Comments:</label>
+              <textarea cols="55" rows="5"></textarea>
+            </div>
+          </fieldset>
+          <button class="submit-button" type="submit">Submit Order</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

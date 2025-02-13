@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Order Summary</h1>
+    <ul>
+      <% for( let i = 0; i < orders.length; i++ ) { %>
+      <h1><%= orders[i].name %></h1>
+
+      <li><%= orders[i].email %></li>
+      <li><%= orders[i].flavors %></li>
+      <li><%= orders[i].cone %></li>
+      <li><%= orders[i].toppings %></li>
+      <li><%= orders[i].comment %></li>
+      <hr />
+      <% } %>
+    </ul>
+  </body>
+</html>

@@ -7,19 +7,19 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Thank you for your order, <%= order.fname %>!</h1>
+    <h1>Thank you for your order, <%= order.name %>!</h1>
     <h3>Order Summary</h3>
 
     <ul>
-      <li>First name: <%= order.fname %></li>
-      <li>Last name: <%= order.lname %></li>
+      <li>Name: <%= order.name %></li>
       <li>Email: <%= order.email %></li>
-      <li>Method of delivery: <%= order.method %></li>
+      <li>Flavor: <%= order.flavors %></li>
+      <li>Cone:<%= order.cone%></li>
       <li>
         <%= Array.isArray(order.toppings) ? order.toppings.join(', ') :
         order.toppings %>
       </li>
-      <li>Pizza size:<%= order.size%></li>
+      <li><%= order.comment %></li>
     </ul>
   </body>
 </html>
